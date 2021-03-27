@@ -1,0 +1,12 @@
+{
+    "require": {
+        "react/react": "*",
+        "eftec/bladeone": "^3.51",
+        "bramus/router": "~1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChatApp\\": "chatApp/"
+        }
+    }
+}
