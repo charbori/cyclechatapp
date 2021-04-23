@@ -13,8 +13,10 @@ $server = new React\Http\Server($loop, function (Psr\Http\Message\ServerRequestI
     );
 });
 
-$socket = new React\Socket\Server('0.0.0.0:8888', $loop);
+$socket = new React\Socket\Server('tcp://0.0.0.0:80', $loop);
 $server->listen($socket);
-
+$server->on('error', function (Exception $e) {
+    echo 'error: ' . $e->getMessage() . PHP_EOL;
+});
 $loop->run();
 ?>

@@ -14,7 +14,8 @@ compiles
 # 일부 git 충돌 제외
 views/home
 
-
+# 내부 다른 프로젝트
+myexample
 
 # 임시 파일
 *.tmp

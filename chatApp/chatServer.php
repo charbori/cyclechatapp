@@ -5,7 +5,7 @@ use React\Socket\ConnectionInterface;
 use ChatApp\ConnectionsPool\ConnectionsPool;
 
 $loop = React\EventLoop\Factory::create();
-$socket = new React\Socket\Server('127.0.0.1:1337', $loop);
+$socket = new React\Socket\Server('0.0.0.0:80', $loop);
 $pool = new ConnectionsPool();
 //$pool = new ConnectionsPool();
 
